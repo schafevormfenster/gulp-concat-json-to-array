@@ -1,20 +1,16 @@
 {
-	"name": "gulp-jsoncombine",
-	"version": "1.0.4",
-	"description":
-		"A plugin for Gulp to combine several JSON files using a custom function",
-	"keywords": ["gulpplugin"],
+	"name": "gulp-concat-json-to-array",
+	"version": "0.1",
+	"description": "A patch/fork of gulp-jsoncombine. A plugin for Gulp to combine several JSON files into an object array.",
+	"keywords": ["gulp", "plugin", "concat", "json", "merge"],
 	"author": {
-		"name": "Eli Yukelzon",
+		"name": "Eli Yukelzon, Jan-Henrik Hempel",
 		"email": "reflog@gmail.com",
-		"url": "https://github.com/reflog"
+		"url": "https://github.com/schafevormfenster/gulp-concat-json-to-array"
 	},
-	"repository": "reflog/gulp-jsoncombine",
+	"repository": "schafevormfenster/gulp-concat-json-to-array",
 	"scripts": {
-		"test":
-			"istanbul test _mocha --report html -- test/*.js --reporter spec",
-		"coveralls":
-			"istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
 		"plugin-error": "^0.1.2",

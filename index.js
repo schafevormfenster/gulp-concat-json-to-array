@@ -18,7 +18,7 @@ module.exports = function(fileName, converter) {
 		);
 	}
 
-	var data = {};
+	var data = [];
 	var meta = {};
 	var firstFile = null;
 
@@ -42,7 +42,7 @@ module.exports = function(fileName, converter) {
 		}
 		try {
 			var name = file.relative.substr(0, file.relative.length - 5);
-			data[name] = JSON.parse(file.contents.toString());
+			data.push(JSON.parse(file.contents.toString()));
 			meta[name] = { cwd: file.cwd, base: file.base, path: file.path };
 		} catch (err) {
 			skipConversion = true;
