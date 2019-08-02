@@ -1,6 +1,6 @@
 {
 	"name": "gulp-concat-json-to-array",
-	"version": "0.1",
+	"version": "0.0.1",
 	"description": "A patch/fork of gulp-jsoncombine. A plugin for Gulp to combine several JSON files into an object array.",
 	"keywords": ["gulp", "plugin", "concat", "json", "merge"],
 	"author": {
